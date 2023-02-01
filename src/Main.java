@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Workout4 {
+public class Main {
     public static void main(String[] args) {
         start();
     }
