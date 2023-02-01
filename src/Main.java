@@ -3,12 +3,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        start();
+         start();
+
     }
 
     static void start() {
         // meniul pentru alegerea exercitiului 1-10
-        System.out.println("\nScrie numarul specific exercitiului (1-10) :");
+        System.out.println("\nScrie numarul specific exercitiului (1-10): ");
 
         int problemNumber = inputNumber();
         switchcase(problemNumber);
@@ -26,10 +27,12 @@ public class Main {
                 System.out.println("Te rog sa introduci numere.");
                 input.next();
             }
+
             returnNumber = input.nextInt();
             test++;
 
         } while (test <= 0);
+
         return returnNumber;
     }
 
@@ -40,7 +43,7 @@ public class Main {
     }
 
     static void problem1() {
-        System.out.println("Exercitiul 1 \n\nScrieti 3 numere si verifica daca minim doua dintre ele sunt pozitive.\n");
+        System.out.println("Exercitiul 1 \n\n Scrieti 3 numere si verifica daca minim doua dintre ele sunt pozitive.\n");
 
         System.out.println("Scrie primul numar:");
         int number1 = inputNumber();
@@ -63,7 +66,7 @@ public class Main {
     }
 
     static void problem2() {
-        System.out.println("Exercitiul 2 \n\nDetermina numarul cel mai mare din trei numere citite de la tastatura "
+        System.out.println("Exercitiul 2 \n\n Determina numarul cel mai mare din trei numere citite de la tastatura "
                 + "fara a folosi if case (se vor folosi operatori ternari).\n");
 
         // introducerea celor 3 valori
@@ -78,6 +81,7 @@ public class Main {
 
         // verificarea numerelor prin operatori ternari
         int largestNumber = (number1 >= number2) ? ((number1 >= number3) ? number1 : number3) : ((number2 >= number3) ? number2 : number3);
+
         System.out.println("Cel mai mare numer introdus de la tastatura este: " + largestNumber);
 
         promptEnterKey();
@@ -85,7 +89,7 @@ public class Main {
     }
 
     static void problem3() {
-        System.out.println("Exercitiul 3 \n\nAfiseaza valorile impare dintr-un interval citit de la tastatura (Ex: citit 2, 9 -> afiseaza: 3, 5, 7, 9)\n");
+        System.out.println("Exercitiul 3 \n\n Afiseaza valorile impare dintr-un interval citit de la tastatura (Ex: citit de la tastatura 2, 9 -> afiseaza: 3, 5, 7, 9)\n");
 
         // introducerea valorilor
         System.out.println("Scrie primul numar:");
@@ -109,7 +113,7 @@ public class Main {
     }
 
     static void problem4() {
-        System.out.println("Exercitiul 4 \n\nVerifica daca un numar este prim sau nu.\n");
+        System.out.println("Exercitiul 4 \n\n Verifica daca un numar este prim sau nu.\n");
 
         // introducerea unei valori de la tastatura
         System.out.println("Introdu un numar:");
@@ -137,17 +141,17 @@ public class Main {
 
 
     static void problem5() {
-        System.out.println("Exercitiul 5 \n\nVerifica daca un String este palindrom sau nu.\n");
+        System.out.println("Exercitiul 5 \n\n Verifica daca un String este palindrom sau nu.\n");
 
-        System.out.println("Scrie textul exercitiului:");
+        System.out.println("Scrie textul exercitiului: ");
         Scanner input = new Scanner(System.in);
         String isPalindrom = input.nextLine();
 
         if(isPalindrome(isPalindrom))
         {
-            System.out.println(isPalindrom+" este un palindrom.");
+            System.out.println(isPalindrom + " este un palindrom.");
         } else {
-            System.out.println(isPalindrom+" nu este un palindrom.");
+            System.out.println(isPalindrom + " nu este un palindrom.");
         }
 
         promptEnterKey();
@@ -170,7 +174,7 @@ public class Main {
     }
 
     static void problem6() {
-        System.out.println("Exercitiul 6 \n\nAfisati primele N numere din sirul lui Fibonacci.\n");
+        System.out.println("Exercitiul 6 \n\n Afisati primele N numere din sirul lui Fibonacci.\n");
         // initierea variabilelor
         int n1 = 0, n2 = 1, n3;
 
@@ -248,7 +252,7 @@ public class Main {
     }
 
     static void problem9() {
-        System.out.println("Exercitiul 9 \n\nVerifica daca un numar natural, introdus de la tastatura, este pefect. \n");
+        System.out.println("Exercitiul 9 \n \n");
 
         // introducerea de la tastatura a unui string
         Scanner curenncy = new Scanner(System.in);
